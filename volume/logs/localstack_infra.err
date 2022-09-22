@@ -1,0 +1,325 @@
+Persistence mode was activated using the DATA_DIR variable. DATA_DIR is deprecated and its value is ignored. The data is instead stored into /var/lib/localstack/state in the LocalStack volume.
+2022-09-22T05:07:58.714  WARN --- [  Thread-110] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-09-22T05:07:58.714  WARN --- [  Thread-110] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-09-22T05:07:58.716  INFO --- [  Thread-110] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-09-22T05:07:58.716  INFO --- [  Thread-110] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-09-22T05:07:58.966  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 935.03ms
+2022-09-22T06:03:06.471  INFO --- [   asgi_gw_0] localstack.request.http    : GET / => 200
+2022-09-22T06:03:06.696  INFO --- [  Thread-409] l.services.motoserver      : starting moto server on http://0.0.0.0:52219
+2022-09-22T06:03:06.697  INFO --- [   asgi_gw_0] localstack.services.infra  : Starting mock S3 service on http port 4566 ...
+2022-09-22T06:03:07.013  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListObjects => 404 (404)
+2022-09-22T06:10:01.443  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.CreateUser => 200
+2022-09-22T07:42:24.682  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.CreateRole => 200
+2022-09-22T07:42:44.197  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.CreateRole => 200
+2022-09-22T07:43:14.235  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.ListRoles => 200
+2022-09-22T07:56:40.505  INFO --- [   asgi_gw_0] localstack.utils.bootstrap : Execution of "_load_service_plugin" took 949.51ms
+2022-09-22T07:56:40.511  INFO --- [   asgi_gw_0] localstack.services.infra  : Starting mock Lambda service on http port 4566 ...
+2022-09-22T07:56:41.045  INFO --- [   asgi_gw_0] localstack.utils.bootstrap : Execution of "require" took 1489.18ms
+2022-09-22T07:56:41.555  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.CreateFunction => 200
+2022-09-22T07:57:40.979  INFO --- [uest_thread)] l.s.a.lambda_executors     : Empty event body specified for invocation of Lambda "arn:aws:lambda:us-east-1:000000000000:function:my-lambda"
+2022-09-22T07:57:40.982  INFO --- [uest_thread)] l.u.container_networking   : Determined main container network: localstack_default
+2022-09-22T07:57:40.987  INFO --- [uest_thread)] l.u.container_networking   : Determined main container target IP: 172.18.0.2
+2022-09-22T07:57:40.988  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:my-lambda
+2022-09-22T07:58:40.777  INFO --- [uest_thread)] l.s.a.lambda_executors     : Empty event body specified for invocation of Lambda "arn:aws:lambda:us-east-1:000000000000:function:my-lambda"
+2022-09-22T07:58:40.777  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:my-lambda
+2022-09-22T07:58:45.561  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.Invoke => 200
+2022-09-22T07:58:45.571  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS lambda.Invoke => 200
+2022-09-22T08:00:46.554  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.DeleteRole => 200
+2022-09-22T08:01:03.347  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS iam.ListRoles => 200
+2022-09-22T08:01:11.099  INFO --- [uest_thread)] l.s.a.lambda_executors     : Empty event body specified for invocation of Lambda "arn:aws:lambda:us-east-1:000000000000:function:my-lambda"
+2022-09-22T08:01:11.099  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:my-lambda
+2022-09-22T08:01:12.046  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.Invoke => 200
+2022-09-22T08:01:26.454  INFO --- [uest_thread)] l.s.a.lambda_executors     : Empty event body specified for invocation of Lambda "arn:aws:lambda:us-east-1:000000000000:function:my-lambda"
+2022-09-22T08:01:26.455  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:my-lambda
+2022-09-22T08:01:27.564  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS lambda.Invoke => 200
+2022-09-22T08:04:37.521  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.DeleteRole => 404 (NoSuchEntity)
+2022-09-22T09:03:34.256  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T09:05:12.794  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T09:05:15.073  INFO --- [   asgi_gw_1] localstack.utils.bootstrap : Execution of "_load_service_plugin" took 2190.85ms
+2022-09-22T09:05:15.076  INFO --- [   asgi_gw_1] localstack.utils.bootstrap : Execution of "require" took 2193.56ms
+2022-09-22T09:05:15.081  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 400 (ValidationError)
+2022-09-22T09:05:15.119  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 400 (ValidationError)
+2022-09-22T09:05:15.496  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T09:05:15.518  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T09:05:15.551  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T09:05:17.582  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:18.005  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:05:18.629  WARN --- [ Thread-1452] l.s.c.models.ecr           : Creating a Mock ECR Repository for CloudFormation. This is only intended to be used for allowing a successful CDK bootstrap and does not provision any underlying ECR repository.
+2022-09-22T09:05:19.701  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:21.729  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:23.612  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:05:23.766  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:25.836  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:27.867  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:28.690  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:05:28.717  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:05:53.219  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:05:53.339  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:05:53.383  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:05:53.416  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:05:53.442  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:05:53.458  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 400 (ValidationError)
+2022-09-22T09:06:00.605  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:06:00.706  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:06:00.725  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:06:00.758  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:06:00.765  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:06:00.843  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:06:00.848  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:06:00.928  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:06:00.935  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:06:00.978  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:06:00.985  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:06:01.063  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:06:01.111  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:06:01.126  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 400 (ValidationError)
+2022-09-22T09:06:01.167  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetObject => 200
+2022-09-22T09:06:01.193  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T09:06:01.215  WARN --- [   asgi_gw_3] l.aws.protocol.serializer  : Response object DescribeChangeSetOutput contains a member which is not specified: RoleARN
+2022-09-22T09:06:01.216  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T09:06:01.261  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T09:06:01.314  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:06:03.289  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:06:05.324  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:06:06.340  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:06:06.354  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:09:40.266  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T09:15:34.668  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T09:15:34.779  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:15:34.897  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:15:34.941  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:17:19.730  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:17:19.833  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:17:19.890  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:17:19.916  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:17:19.958  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:17:19.986  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:17:20.005  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:17:20.244  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:17:20.346  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:17:20.371  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:17:20.405  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:17:20.408  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:17:20.477  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:17:20.479  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:17:20.524  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:17:20.536  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:17:20.585  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:17:20.588  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:17:20.651  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:17:20.696  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:17:20.713  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:17:20.745  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:17:20.775  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T09:17:20.811  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetObject => 200
+2022-09-22T09:17:20.832  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T09:17:20.849  WARN --- [   asgi_gw_1] l.aws.protocol.serializer  : Response object DescribeChangeSetOutput contains a member which is not specified: RoleARN
+2022-09-22T09:17:20.850  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T09:17:20.884  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T09:17:20.905  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:17:21.058  INFO --- [ Thread-1693] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T09:17:21.401  INFO --- [ Thread-1693] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T09:17:22.912  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:17:24.948  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:17:25.923  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:17:25.936  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:17:36.666  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T09:29:44.200  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:29:44.285  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:29:44.329  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:29:44.354  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:29:44.380  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:29:44.394  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:29:44.407  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:29:44.587  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:29:44.657  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:29:44.683  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:29:44.708  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:29:44.711  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:29:44.757  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:29:44.766  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:29:44.799  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:29:44.806  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:29:44.841  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:29:44.843  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:29:44.899  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:29:44.933  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:29:44.950  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:29:44.965  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:29:44.985  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T09:29:45.014  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetObject => 200
+2022-09-22T09:29:45.035  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T09:29:45.048  WARN --- [   asgi_gw_2] l.aws.protocol.serializer  : Response object DescribeChangeSetOutput contains a member which is not specified: RoleARN
+2022-09-22T09:29:45.050  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T09:29:45.077  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T09:29:45.095  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:29:45.238  INFO --- [ Thread-1826] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T09:29:45.525  INFO --- [ Thread-1826] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T09:29:47.106  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:29:49.136  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:29:50.114  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:29:50.133  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:30:06.127  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T09:35:14.906  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.ListRoles => 200
+2022-09-22T09:46:11.820  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T09:46:39.644  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:46:39.764  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:46:39.815  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:46:39.840  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:46:39.866  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:46:39.887  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:46:39.907  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:46:40.143  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:46:40.238  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:46:40.267  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:46:40.301  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:46:40.306  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:46:40.394  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:46:40.399  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:46:40.448  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:46:40.450  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:46:40.492  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:46:40.500  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T09:46:40.568  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:46:40.610  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T09:46:40.622  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:46:40.642  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:46:40.670  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T09:46:40.718  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetObject => 200
+2022-09-22T09:46:40.737  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T09:46:40.754  WARN --- [   asgi_gw_0] l.aws.protocol.serializer  : Response object DescribeChangeSetOutput contains a member which is not specified: RoleARN
+2022-09-22T09:46:40.755  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T09:46:40.786  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T09:46:40.808  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:46:40.988  INFO --- [ Thread-1985] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T09:46:41.315  INFO --- [ Thread-1985] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T09:46:42.815  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:46:44.875  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:46:45.827  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:46:45.850  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:47:02.020  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T09:50:49.609  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.ListStacks => 200
+2022-09-22T09:51:42.695  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T09:51:42.867  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:51:43.087  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:51:43.128  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:55:54.485  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T09:55:54.614  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:55:54.754  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:55:54.798  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:59:53.744  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:59:53.880  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:59:53.990  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:59:54.057  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:59:54.102  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:59:54.148  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:59:54.183  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:59:54.511  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:59:54.600  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:59:54.634  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS ssm.GetParameter => 200
+2022-09-22T09:59:54.675  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:59:54.679  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.AssumeRole => 200
+2022-09-22T09:59:54.754  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:59:54.761  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T09:59:54.819  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:59:54.822  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T09:59:54.848  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:59:54.863  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T09:59:54.888  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T09:59:54.921  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetObject => 200
+2022-09-22T09:59:54.944  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T09:59:54.971  WARN --- [   asgi_gw_1] l.aws.protocol.serializer  : Response object DescribeChangeSetOutput contains a member which is not specified: RoleARN
+2022-09-22T09:59:54.973  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T09:59:55.010  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T09:59:55.025  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T09:59:55.226  INFO --- [ Thread-2123] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T09:59:55.536  INFO --- [ Thread-2123] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T09:59:57.034  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T09:59:59.095  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:00:00.042  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:00:00.066  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:00:09.302  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.ListStacks => 200
+2022-09-22T10:02:13.822  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:02:13.858  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:02:13.883  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:13.912  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:02:14.124  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:02:14.215  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:14.255  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:14.275  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:02:14.315  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:02:14.356  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T10:02:14.389  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T10:02:14.421  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-09-22T10:02:14.500  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200
+2022-09-22T10:02:14.628  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T10:02:14.723  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T10:02:14.741  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T10:02:14.765  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T10:02:14.792  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:14.942  INFO --- [ Thread-2183] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T10:02:15.291  INFO --- [ Thread-2183] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T10:02:16.801  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:02:18.836  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:02:19.815  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:19.841  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:02:44.385  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:02:44.521  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:44.652  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:02:44.679  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:03:14.597  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:03:14.633  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:03:14.669  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:03:14.692  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:03:15.038  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:03:15.155  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:03:15.216  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:03:15.250  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:03:15.331  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:03:15.390  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T10:03:15.424  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T10:03:15.464  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T10:03:15.626  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T10:03:15.685  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T10:03:15.734  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T10:03:15.814  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:03:15.962  INFO --- [ Thread-2236] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T10:03:16.294  INFO --- [ Thread-2236] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T10:03:17.793  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:03:19.836  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:03:20.845  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:03:20.872  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:03:24.760  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.ListStacks => 200
+2022-09-22T10:03:33.871  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T10:38:16.754  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:38:16.947  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:38:17.135  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:38:17.270  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:39:31.608  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:39:31.671  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:39:31.720  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:39:31.752  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:39:32.125  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:39:32.270  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:39:32.333  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:39:32.375  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.GetTemplate => 200
+2022-09-22T10:39:32.486  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2022-09-22T10:39:32.584  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetBucketLocation => 200
+2022-09-22T10:39:32.626  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2022-09-22T10:39:32.656  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2022-09-22T10:39:32.875  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2022-09-22T10:39:32.983  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2022-09-22T10:39:33.098  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2022-09-22T10:39:33.184  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:39:33.397  INFO --- [ Thread-2484] l.u.c.template_deployer    : Updating resource HelloHandlerServiceRole11EF7C63 of type IAM::Role
+2022-09-22T10:39:34.044  INFO --- [ Thread-2484] l.u.c.template_deployer    : Updating resource HelloHandler2E4FBA4D of type Lambda::Function
+2022-09-22T10:39:35.163  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:39:37.345  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:39:38.207  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2022-09-22T10:39:38.259  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2022-09-22T10:40:10.250  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.ListFunctions => 200
+2022-09-22T10:40:29.385  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS cloudformation.ListStacks => 200
+2022-09-22T10:42:13.152  INFO --- [uest_thread)] l.s.a.lambda_executors     : Empty event body specified for invocation of Lambda "arn:aws:lambda:us-east-1:000000000000:function:my-lambda"
+2022-09-22T10:42:13.152  INFO --- [uest_thread)] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-east-1:000000000000:function:my-lambda
+2022-09-22T10:42:14.859  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.Invoke => 200
+2022-09-22T10:43:20.623  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.ListFunctions => 200
